@@ -1,0 +1,376 @@
+<style.
+.body {
+	background-color: #D4DFE3;
+	/*margin-left: 185px; */
+}
+
+.container {
+	width: 960px;
+	height: 1320px;
+  /*height: 10%;*/
+	background-color: #f8f8f8;
+	margin: -8px 0 0 185px;
+  padding: 0 0 0 0;
+}
+
+/* ---- Start Message CSS ---- */
+.msg-icn {
+	font-size: 18px;
+    display: inline-block;
+    position: relative;
+    padding: 14px 18px;
+    color: white;
+    box-sizing: border-box;
+    max-width: 500px;
+    min-width: 80px;
+    min-height: 38px;
+    margin: 70px 0px 0 360px;
+}
+.msg-icn:before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: 2px solid #e5a002;
+    border-radius: 8px;
+    box-sizing: border-box;
+    clip-path: polygon(0% 105%, 0% 0%, 105% 0%, 105% 105%, 43px 105%, 43px 80%, 21px 80%, 21px 105%);
+}
+.msg-icn:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 20px;
+    border:2px;
+    background: #e5a002;
+    top: calc(100% - 1px);
+    left: 20px;
+    box-sizing: border-box;
+    clip-path: polygon(0 0, 0% 100%, 100% 0%, calc(100% - 2px) 0, 1px calc(100% - 2px), 1px 0);
+}
+#message-box {
+	width: auto;
+	height:255px;
+	background-color: #6BCDEA;
+}
+/* ---- End Message CSS ---- */
+
+.fieldset {
+	border-width: 5px 0 0  0;
+	margin-left: 25px;
+	width: 880px;
+}
+.fieldsets {
+  border-width: 5px 0 0 0;
+}
+
+/* ---- Start Contect CSS ---- */
+.flex-contect  {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: 200px;
+}
+.flex-contect  h4{
+  margin: 25px 0 0 0;
+}
+.flex-contect img {
+  height: 48px;
+  width: 48px;
+  margin: 6px 15px 0px 80px;
+}
+/* ---- End Contect CSS ---- */
+
+/* ---- Satrt Skill CSS ---- */
+.flex-container {
+  padding: 0 100px 0 100px;
+  margin: -20px 0 50px 0;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+.flex-item {
+  padding: 5px;
+  width: 100px;
+  height: 75px;
+  margin-top: 5px;
+  
+  line-height: 150px;
+  color: black;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center; 
+  font:bold;
+}
+.flex-item img{
+	height: 70px;
+}
+.flex-item p{
+	margin-top: -135px;
+}
+/* ---- End Skill CSS ---- */
+
+/* ---- Start Timeline CSS ---- */
+ol {
+	position: relative;
+	display: block;
+	margin: 60px;
+	height: 4px;
+	background: #31708F;
+}
+ol::before,
+ol::after {
+	content: "";
+	position: absolute;
+	top: -8px;
+	display: block;
+	width: 0;
+	height: 0;
+  border-radius: 10px;
+	border: 10px solid #31708F;
+}
+ol::before {
+	left: -5px;
+}
+ol::after {
+	right: -10px;
+	border: 10px solid transparent;
+	border-right: 0;
+	border-left: 20px solid #31708F;
+  border-radius: 3px;
+}
+
+/* ---- Timeline Elements ---- */
+ol {
+	position: relative;
+	display: block;
+	margin: 60px;
+	height: 4px;
+	background: #31708F;
+}
+ol::before,
+ol::after {
+	content: "";
+	position: absolute;
+	top: -8px;
+	display: block;
+	width: 0;
+	height: 0;
+  border-radius: 10px;
+	border: 10px solid #31708F;
+}
+ol::before {
+	left: -5px;
+}
+ol::after {
+	right: -10px;
+	border: 10px solid transparent;
+	border-right: 0;
+	border-left: 20px solid #31708F;
+  border-radius: 3px;
+}
+
+/* ---- Timeline elements ---- */
+li {
+	position: relative;
+	display: inline-block;
+	float: left;
+	width: 100px;
+	font: bold 14px arial;
+  	height: 50px;
+}
+li .diplome {
+  position: absolute;
+  top: -55px;
+  left: 32%;
+  color: #000000;
+}
+li .point {
+	content: "";
+	top: -5px;
+	left: 40%;
+	display: block;
+	width: 6px;
+	height: 6px;
+	border: 4px solid #31708F;
+	border-radius: 10px;
+	background: #fff;
+  position: absolute;
+}
+li .description {
+  display: none;
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin-top: 20px;
+  position: relative;
+  font-weight: normal;
+  z-index: 1;
+}
+.description::before {
+  content: '';
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #f4f4f4;
+  position: absolute;
+  top: -5px;
+  left: 43%;
+}
+
+/* ---- Hover effects ---- */
+/*li:hover {
+	cursor: pointer;
+  color: #48A4D2;
+}
+li:hover .description {
+  display: block;
+}*/
+/* ---- End Timeline CSS ---- */
+
+.wrapper {
+  width: 100px; /* Set the size of the progress bar */
+  height: 100px;
+  position: absolute; /* Enable clipping */
+  clip: rect(0px, 100px, 100px, 50px); /* Hide half of the progress bar */
+}
+/* Set the sizes of the elements that make up the progress bar */
+.circle {
+  width: 80px;
+  height: 80px;
+  border: 10px solid green;
+  border-radius: 50px;
+  position: absolute;
+  clip: rect(0px, 50px, 100px, 0px);
+}
+/* Using the data attributes for the animation selectors. */
+/* Base settings for all animated elements */
+div[data-anim~=base] {
+  -webkit-animation-iteration-count: 1;  /* Only run once */
+  -webkit-animation-fill-mode: forwards; /* Hold the last keyframe */
+  -webkit-animation-timing-function:linear; /* Linear animation */
+}
+
+.main{
+  margin-left: 12px;
+  width: 40%;
+  height: 30%;
+}
+.progressBar{
+  position: relative;
+  width: 230%;
+  height: 30px;
+  background: #eeeeee;
+  /*background: #cdf1c9b0;*/
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px #222;
+}
+.title{
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  padding-left: 10px;
+  float: left;
+  font-weight: bold;
+  color: #fff;
+  line-height: 2.2;
+  z-index: 10000;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: 2px 0 2px #333;
+  text-shadow: 1px 1px 1px #000;
+}
+.progress_value{
+  position: relative;
+  float: right;
+  padding-right: 2px;
+  line-height: 2.2;
+  font-weight: bold;
+  color: #455a64;
+  z-index: 10000;
+}
+.progress{
+  height: 30px;
+  position: absolute;
+  border-radius: 5px;
+  box-shadow: 2px 0 2px #555;
+}
+.htmlColor{
+  background: #b71c1c;
+}
+.cssColor{
+  background: #4a148c;
+}
+.jsColor{
+  background: #1a237e;
+}
+.phpColor{
+  background: #1b5e20;
+}
+.ajaxColor{
+  background: #ff6f00;
+}
+.html{
+  background: #ec407a;
+}
+.css{
+  background: #ab47bc;
+}
+.js{
+  background: #5c6bc0;
+}
+.php{
+  background: #66bb6a;
+}
+.ajax{
+  background: #ffca28;
+}
+
+/* start Hobbies CSS */
+.flex-hobbites {
+  padding: 0 50px 0 220px;
+  margin: -20px 172px 25px 8px;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+ 
+  /*-webkit-flex-flow: row wrap;*/
+  justify-content: space-around;
+}
+
+.flex-hobbies {
+  padding: 15px;
+  width: 100px;
+  height: 75px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: black;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center; 
+  font:bold;
+}
+.flex-hobbies img{
+  height: 65px;
+}
+.flex-hobbies p{
+  margin-top: -135px;
+}
+/* End Hobbies CSS */
+
+</style>
